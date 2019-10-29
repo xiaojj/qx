@@ -50,9 +50,11 @@ DOMAIN-SUFFIX,inmobi.net,REJECT
 DOMAIN-SUFFIX,inmobicdn.cn,REJECT
 DOMAIN-SUFFIX,inmobicdn.net,REJECT
 DOMAIN-SUFFIX,inner-active.mobi,REJECT
+DOMAIN-SUFFIX,insurads.com,REJECT
 DOMAIN-SUFFIX,ironsrc.com,REJECT
 DOMAIN-SUFFIX,irs01.com,REJECT
 DOMAIN-SUFFIX,iskyworker.com,REJECT
+DOMAIN-SUFFIX,juicyads.com,REJECT
 DOMAIN-SUFFIX,kochava.com,REJECT
 DOMAIN-SUFFIX,leadboltmobile.net,REJECT
 DOMAIN-SUFFIX,lenzmx.com,REJECT
@@ -70,6 +72,7 @@ DOMAIN-SUFFIX,mmstat.com,REJECT
 DOMAIN-SUFFIX,moatads.com,REJECT
 DOMAIN-SUFFIX,mobclix.com,REJECT
 DOMAIN-SUFFIX,mopub.com,REJECT
+DOMAIN-SUFFIX,okjhb.xyz,REJECT
 DOMAIN-SUFFIX,openx.net,REJECT
 DOMAIN-SUFFIX,qchannel01.cn,REJECT
 DOMAIN-SUFFIX,rayjump.com,REJECT
@@ -93,7 +96,9 @@ DOMAIN-SUFFIX,vidoomy.com,REJECT
 DOMAIN-SUFFIX,voicefive.com,REJECT
 DOMAIN-SUFFIX,vungle.com,REJECT
 DOMAIN-SUFFIX,wedolook.com,REJECT
+DOMAIN-SUFFIX,wshtgame.com,REJECT
 DOMAIN-SUFFIX,xdrig.com,REJECT
+DOMAIN-SUFFIX,zu08e.cn,REJECT
 
 DOMAIN-SUFFIX,ad.daum.net,REJECT
 DOMAIN-SUFFIX,track.xiachufang.com,REJECT
@@ -117,8 +122,6 @@ DOMAIN,adsdk.dmzj.com,REJECT
 DOMAIN,adserver.pandora.com,REJECT
 DOMAIN,adui.tg.meitu.com,REJECT
 DOMAIN,adv.bandi.so,REJECT
-DOMAIN,adx.hupu.com,REJECT
-DOMAIN,adx-api.hupu.com,REJECT
 DOMAIN,adxserver.ad.cmvideo.cn,REJECT
 DOMAIN,app-ad.variflight.com,REJECT
 DOMAIN,applog.mobike.com,REJECT
@@ -194,8 +197,8 @@ DOMAIN,xlog-va.byteoversea.com,REJECT
 DOMAIN,adx.yiche.com,REJECT
 DOMAIN,log.ycapp.yiche.com,REJECT
 # > 百词斩
-DOMAIN,advertise.baicizhan.org,REJECT
 DOMAIN,advertise.baicizhan.com,REJECT
+DOMAIN,advertise.baicizhan.org,REJECT
 # (C)
 # > CNTV
 DOMAIN,galaxy.bjcathay.com,REJECT
@@ -203,6 +206,7 @@ DOMAIN,mdrecv.app.cntvwb.cn,REJECT
 DOMAIN,sdapprecv.app.cntvwb.cn,REJECT
 DOMAIN,vdapprecv.app.cntvwb.cn,REJECT
 # > ChinaNet
+DOMAIN,ad.k.21cn.com,REJECT
 DOMAIN,admarket.21cn.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
 # > 车来了
@@ -223,6 +227,10 @@ DOMAIN-SUFFIX,da.hunantv.com,REJECT
 DOMAIN-SUFFIX,log.hunantv.com,REJECT
 DOMAIN,log.v2.hunantv.com,REJECT
 DOMAIN,v2.log.hunantv.com,REJECT
+# > Hupu
+DOMAIN,ad-goblin.hupu.com,REJECT
+DOMAIN,adx.hupu.com,REJECT
+DOMAIN,adx-api.hupu.com,REJECT
 # (I)
 # > iQiyi
 DOMAIN,ifacelog.iqiyi.com,REJECT
