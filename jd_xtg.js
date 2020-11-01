@@ -2,7 +2,7 @@
  * @Author: lxk0301 
  * @Date: 2020-10-21 17:04:04 
  * @Last Modified by: lxk0301
- * @Last Modified time: 2020-10-30 09:35:04
+ * @Last Modified time: 2020-11-01 00:35:04
  */
 /**
  星推官脚本 https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
@@ -25,7 +25,7 @@
  京东星推官 = type=cron,cronexp=2 0 * * *,wake-system=1,timeout=320,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
  */
 const $ = new Env('京东星推官');
-const activeEndTime = '2020/11/13 00:00:00';//活动结束时间
+const activeEndTime = '2020/11/12 23:59:59';//活动结束时间
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
@@ -38,6 +38,9 @@ if ($.isNode()) {
   })
   if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {};
 } else {
+  let cookiesData = $.getdata('CookiesJD') || "[]";
+  cookiesData = JSON.parse(cookiesData);
+  cookiesArr = cookiesData.map(item => item.cookie);
   cookiesArr.push($.getdata('CookieJD'));
   cookiesArr.push($.getdata('CookieJD2'));
 }
@@ -59,6 +62,7 @@ const starID = [
   'lgyangzishan',
   'laobansongweilong',
   'haiermaoxiaotong',
+  "skgwangyibo"
 ];
 const shareID = [
   'e646c144-28a7-4b1b-8145-5b0dbff107ec',
@@ -77,6 +81,7 @@ const shareID = [
   '921c376e-8cc5-4236-8242-ff8bb1b88a95',
   '8b3ce203-4b10-4c36-a87d-da8c82efe362',
   'c8e1feb3-6ab1-4410-8444-1de8bd22e041',
+  "dd6b5270-3e5e-436d-be0f-295a8604cf47"
 ];
 const JD_API_HOST = 'https://urvsaggpt.m.jd.com/guardianstar';
 !(async () => {
@@ -100,9 +105,9 @@ const JD_API_HOST = 'https://urvsaggpt.m.jd.com/guardianstar';
         $.j = index;
         await JD_XTG();
       }
-      console.log(`\n等待10秒后，再去领取奖励\n`)
+      console.log(`\n等待3秒后，再去领取奖励\n`)
       console.log(`做任务之前京豆总计:${$.beanCount}`)
-      await $.wait(10000);
+      await $.wait(3000);
       for (let index = 0; index < starID.length; index ++) {
         $.activeId = starID[index];
         $.j = index;
