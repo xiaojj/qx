@@ -86,11 +86,7 @@ DOMAIN-SUFFIX,mgtv.com,China
 DOMAIN-SUFFIX,iqiyi.com,China
 DOMAIN-SUFFIX,iqiyipic.com,China
 DOMAIN-SUFFIX,71.am.com,China
-# > JD
-DOMAIN-SUFFIX,jd.com,China
-DOMAIN-SUFFIX,jd.hk,China
-DOMAIN-SUFFIX,jdpay.com,China
-DOMAIN-SUFFIX,360buyimg.com,China
+
 # > Kingsoft
 DOMAIN-SUFFIX,iciba.com,China
 DOMAIN-SUFFIX,ksosoft.com,China
