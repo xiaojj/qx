@@ -283,14 +283,14 @@ DOMAIN,adeng.hpplay.cn,REJECT
 DOMAIN,rp.hpplay.cn,REJECT
 # (M)
 # > MI
-DOMAIN-SUFFIX,ad.intl.xiaomi.com,REJECT
-DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
-DOMAIN-SUFFIX,admob.xiaomi.com,REJECT
-DOMAIN-SUFFIX,tracking.miui.com,REJECT
-DOMAIN,adv.sec.intl.miui.com,REJECT
-DOMAIN,adv.sec.miui.com,REJECT
-DOMAIN,data.mistat.xiaomi.com,REJECT
-DOMAIN,tracking.intl.miui.com,REJECT
+# DOMAIN-SUFFIX,ad.intl.xiaomi.com,REJECT
+# DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
+# DOMAIN-SUFFIX,admob.xiaomi.com,REJECT
+# DOMAIN-SUFFIX,tracking.miui.com,REJECT
+# DOMAIN,adv.sec.intl.miui.com,REJECT
+# DOMAIN,adv.sec.miui.com,REJECT
+# DOMAIN,data.mistat.xiaomi.com,REJECT
+# DOMAIN,tracking.intl.miui.com,REJECT
 # > 墨迹天气
 DOMAIN,ad.api.moji.com,REJECT
 DOMAIN,adlaunch.moji.com,REJECT
